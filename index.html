@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fake Amazon</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EAEDED;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header-container {
+            background-color: black;
+            height: 90px;
+        }
+
+        .top-bar {
+            background-color: blue;
+            height: 30px;
+            background-image: url('./img/smtopbar.png');
+            background-size: cover, contain;
+        }
+
+        .top-nav {
+            background-color: #232F3E;
+            height: 60px;
+        }
+        
+        .top-left {
+            width: 110px;
+            float: left;
+        }
+
+        .top-left > img , .top-right > img {
+            height: 60px;
+        }
+
+        .top-left, .top-middle, .top-right {
+            height: 100%;
+        }
+
+        .top-middle {
+            width: calc(100% - 330px);
+            float: left;
+            text-align: center;
+        }
+
+        .top-search {
+            width: 400px;
+            margin-top: 5px;
+        }
+
+        .top-nav-items {
+            text-align: left;
+            margin-top: 18px;
+            margin-left: 22px;
+        }
+
+        .top-nav-items > li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .top-nav-items > li > a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #FFF;
+            padding: 4px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .top-nav-items > li > a.hover {
+            border: 1px solid #FFF;
+            border-radius: 5px;
+        }
+
+        .top-search-button {
+            background-color: #FEBD69;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+
+        .top-right {
+            width: 220px;
+            float: right;
+            overflow: hidden;
+        }
+
+        .top-right > img {
+            background-position: 30px 0; 
+        }
+
+        .main-body {
+            width: 80vw;
+            min-height: 800px;
+            background-color: transparent;
+            margin: 0px auto;
+        }
+        .main-top-container > img {
+            max-width: 100%;
+        }
+        
+        .main-top-items {
+            text-align: center;
+            margin-top: -200px;
+        }
+
+        .main-top-items > ul {
+            text-align: center;
+        }
+
+        .main-top-items > li {
+            display: inline-block;
+            background-color: white;
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .main-top-items > li:last-child {
+            background-color: transparent !important;
+        }
+
+        .btn-sign-in {
+            background-color: #f0c14b;
+            border-radius: 1px;
+            border-color: #a88734 #9c7e31 #846a29;
+            color: #111;
+            font-size: 8px;
+            padding: 8px 20px;
+        }
+
+        .last-child {
+            background-color: white;
+            display: inline-block;
+
+        }
+
+        .main-top-items > li > img {
+            max-width: 100%;
+        }
+
+        .main-top-items > li > h2, .main-top-items > li > span > h2 {
+            font-size: 15px;
+            margin-bottom: 7px;
+        }
+
+        .main-top-items > li > p, .main-top-items > li > a {
+            font-size: 7px;
+        }
+
+        .main-bottom-container {
+            width: 100%;
+            list-style-type: none;
+        }
+
+        .main-bottom-container > li {
+            width: 100%;
+            background-color: white;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+
+        .main-bottom-container > li > img {
+            width: 100%;
+        }
+
+        .bg-gradient {
+
+        }
+
+        .footer-sidebar-container {
+            width: 100vw;
+            min-height: 500px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="top-bar">
+            Top bar
+        </div>
+        <div class='top-nav'>
+            <div class='top-left'>
+                <img src='./img/smleft.PNG' alt='top-left'>
+            </div>
+            <div class='top-middle'>
+                <input type='text' class='top-search'>
+                <button type='button' class='top-search-button'>Search</button>
+                <ul class='top-nav-items'>
+                    <li>
+                        <a href="#">Your Amazon.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Today's Deals</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                    <li>
+                        <a href="#">Whole Foods</a>
+                    </li>
+                    <li>
+                        <a href="#">Registry</a>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='top-right'>
+                <img src='./img/smright.PNG' alt='top-right'>
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        <div class="main-top-container">
+            <img src="./img/bg_cover.jpg" alt="banner">
+            <ul class="main-top-items bg-gradient">
+                <li>
+                    <h2>Find the perfect gift</h2>
+                    <img src="./img/sm_img_1.jpg" alt="img1">
+                    <p>Send love, spread love</p>
+                    <a href="#">See all Valentine's Day Gifts</a>
+                </li>
+                <li>
+                    <h2>Bargain finds</h2>
+                    <img src="./img/sm_img_2.jpg" alt="img2">
+                    <p>Device accessories</p>
+                    <a href="#">See more</a>
+                </li>
+                <li>
+                    <h2>Explore live plants</h2>
+                    <img src="./img/sm_img_3.jpg" alt="img3">
+                    <p>Brighten your space with live greenery.</p>
+                    <a href="#">Shop now</a>
+                </li>
+                <li>
+                    <span class="last-child">
+                        <h2>Sign in for the best experience</h2>
+                        <button class="btn-sign-in" type="button">Sign in securely</button>
+                    </span>
+                    <img src="./img/sm_img_4.jpg" alt="img4">
+                </li>
+            </ul>
+        </div>
+        <ul class="main-bottom-container">
+            <li>
+                <img src="./img/bg_banner1.PNG" alt="b-img1">
+            </li>
+            <li>
+                <img src="./img/bg_banner2.PNG" alt="b-img2">
+            </li>
+            <li>
+                <img src="./img/bg_banner3.PNG" alt="b-img3">
+            </li>
+        </ul>
+    </div>
+    <div class="footer-sidebar-container">
+        Footer sidebar container
+    </div>
+</body>
+
+</html>
